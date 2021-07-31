@@ -11,7 +11,7 @@ If you're system language is English but want to use [Naver](https://www.naver.c
 ## Installation
 
 1. [Download the latest version](https://github.com/jhaemin/multilinguist/releases) and uncompress the zip file.
-2. Navigate `chrome://extensions` in your Chrome.
+2. Navigate to `chrome://extensions` in your Chrome.
 3. Turn on **Developer mode** on top right.
 4. Click **Load unpacked** and open `extension` folder inside downloaded repository folder.
 
