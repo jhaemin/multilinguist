@@ -53,7 +53,6 @@ const App: FC = () => {
         className="add-button"
         onClick={() => {
           chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-            console.log(tabs)
             const url = (tabs[0].url ?? 'google.com')
               .replace(/https?:\/\/(www\.)?/g, '')
               .split('/')[0]

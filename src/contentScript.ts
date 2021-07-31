@@ -6,8 +6,6 @@ chrome.storage.local.get(['options'], (items) => {
 
   const optionIdx = options.findIndex(({ url }) => hostname.includes(url))
 
-  console.log(optionIdx)
-
   if (optionIdx !== -1) {
     embedScript(options[optionIdx].locale)
   }
