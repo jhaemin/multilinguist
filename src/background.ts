@@ -46,17 +46,6 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     console.log(result)
 
     return result
-
-    // for (let i = 0; i < details.requestHeaders!.length; i++) {
-    //   if (details.requestHeaders![i].name === 'Accept-Language') {
-    //     details.requestHeaders![i].value = backgroundLocale
-    //     break
-    //   }
-    // }
-
-    // const result = { requestHeaders: details.requestHeaders }
-
-    // return result
   },
   {
     urls: ['<all_urls>'],
