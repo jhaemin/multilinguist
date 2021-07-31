@@ -1,0 +1,104 @@
+:root {
+  --component-background: #f0f0f2;
+  --component-border-radius: 4px;
+  --component-height: 32px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 340px;
+}
+
+input {
+  height: var(--component-height);
+  appearance: none;
+  border: none;
+  border-radius: var(--component-border-radius);
+  background-color: var(--component-background);
+  padding: 0 10px;
+  font: inherit;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background: none;
+  height: var(--component-height);
+}
+
+.app {
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.option-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-item:not(:last-child) {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.action-button {
+  padding: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-item.edit-mode input {
+}
+
+select {
+  appearance: none;
+  border: none;
+  background: none;
+  padding-left: 10px;
+  padding-right: 30px;
+  background-color: var(--component-background);
+  border-radius: var(--component-border-radius);
+  height: var(--component-height);
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.add-button {
+  background-color: var(--component-background);
+  width: 100%;
+  border-radius: var(--component-border-radius);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
